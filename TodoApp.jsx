@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 
+
 let nextid=4;
 export default function TodoApp() { 
   let [todoInput,updateInput]=useState()
@@ -49,9 +50,9 @@ export default function TodoApp() {
   
   return (
     <div className='container'>
-        <h3 style={{color:'maroon'}}>Todo App using React</h3>
+        <h3 style={{color:'maroon',textAlign:'center'}}>Todo App using React</h3>
       <div className='input-group'>
-        <input type='text' className='form-control' onChange={(e)=>{ 
+        <input type='text' className='form-control border border-primary' onChange={(e)=>{ 
           let task1=e.target.value;
           updateInput(task1)
 
